@@ -4,9 +4,14 @@
 > @description:
 > @value:
 
+| Name          | Description   | Value         | Depending     
+|:-------------:|:-------------:|:-------------:|:-------------:|
+|
+
 **1. description:**
-@description: A short description of what your post type is. As far as I know, this isn't used anywhere in core WordPress.  However, themes may choose to display this on post type archives.
-@value: string
+
+| **@description** | A short description of what your post type is. As far as I know, this isn't used anywhere in core WordPress.  However, themes may choose to display this on post type archives. |
+| **@value** | string
 
 **2. public:**
 > @description: Whether the post type should be used publicly via the admin or by front-end users. This argument is sort of a catchall for many of the following arguments.  I would focus more on adjusting them to your liking than this argument.
