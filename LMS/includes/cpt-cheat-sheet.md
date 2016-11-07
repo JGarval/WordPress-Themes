@@ -68,17 +68,19 @@
 > @description: A string used to build the edit, delete, and read capabilities for posts of this type. You can use a string or an array (for singular and plural forms).  The array is useful if the plural form can't be made by simply adding an 's' to the end of the word.  For example, array( 'box', 'boxes' ).
 > @value: string|array (defaults to 'post')
 
+**17. map_meta_cap:**
+> @description: Whether WordPress should map the meta capabilities (edit_post, read_post, delete_post) for you. If set to FALSE, you'll need to roll your own handling of this by filtering the 'map_meta_cap' hook.
+> @value: bool (defaults to FALSE)
 
-		// Whether WordPress should map the meta capabilities (edit_post, read_post, delete_post) for
-		// you.  If set to FALSE, you'll need to roll your own handling of this by filtering the
-		// 'map_meta_cap' hook.
-		'map_meta_cap'        => true, // bool (defaults to FALSE)
-		// Provides more precise control over the capabilities than the defaults.  By default, WordPress
-		// will use the 'capability_type' argument to build these capabilities.  More often than not,
-		// this results in many extra capabilities that you probably don't need.  The following is how
-		// I set up capabilities for many post types, which only uses three basic capabilities you need
-		// to assign to roles: 'manage_examples', 'edit_examples', 'create_examples'.  Each post type
-		// is unique though, so you'll want to adjust it to fit your needs.
+**18. capabilities:**
+> @description: Provides more precise control over the capabilities than the defaults.  By default, WordPress will use the 'capability_type' argument to build these capabilities.  More often than not, this results in many extra capabilities that you probably don't need.  The following is how I set up capabilities for many post types, which only uses three basic capabilities you need to assign to roles: 'manage_examples', 'edit_examples', 'create_examples'.  Each post type is unique though, so you'll want to adjust it to fit your needs.
+> @value: array
+  **..1. edit_post:** => 'edit_<CPT>',
+  **..2. read_post:** => 'read_<CPT>', 
+  **..3. delete_post:** => 'delete_<CPT>',
+
+
+		//
 		'capabilities' => array(
 			// meta caps (don't assign these to roles)
 			'edit_post'              => 'edit_example',
