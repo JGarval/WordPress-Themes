@@ -5,11 +5,12 @@
 > @value:
 
 **1. description:**
-> @description: A short description of what your post type is. As far as I know, this isn't used anywhere in core WordPress.  However, themes may choose to display this on post type archives.
-> @value: string
+@description: A short description of what your post type is. As far as I know, this isn't used anywhere in core WordPress.  However, themes may choose to display this on post type archives.
+@value: string
 
 **2. public:**
 > @description: Whether the post type should be used publicly via the admin or by front-end users. This argument is sort of a catchall for many of the following arguments.  I would focus more on adjusting them to your liking than this argument.
+
 > @value: bool (default is FALSE)
 
 **3. publicly_queryable:**
@@ -74,6 +75,7 @@
 
 **18. capabilities:**
 > @description: Provides more precise control over the capabilities than the defaults.  By default, WordPress will use the 'capability_type' argument to build these capabilities.  More often than not, this results in many extra capabilities that you probably don't need.  The following is how I set up capabilities for many post types, which only uses three basic capabilities you need to assign to roles: 'manage_examples', 'edit_examples', 'create_examples'.  Each post type is unique though, so you'll want to adjust it to fit your needs.
+
 > @value: array
 
   meta caps (don't assign these to roles)
