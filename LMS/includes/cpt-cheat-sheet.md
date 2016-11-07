@@ -76,9 +76,9 @@
 > @description: Provides more precise control over the capabilities than the defaults.  By default, WordPress will use the 'capability_type' argument to build these capabilities.  More often than not, this results in many extra capabilities that you probably don't need.  The following is how I set up capabilities for many post types, which only uses three basic capabilities you need to assign to roles: 'manage_examples', 'edit_examples', 'create_examples'.  Each post type is unique though, so you'll want to adjust it to fit your needs.
 > @value: array
 
-  **..1. edit_post:** => 'edit_<CPT>',
-  **..2. read_post:** => 'read_<CPT>',
-  **..3. delete_post:** => 'delete_<CPT>',
+  **  1. edit_post:** => 'edit_<CPT>',
+  **  2. read_post:** => 'read_<CPT>',
+  **  3. delete_post:** => 'delete_<CPT>',
 
 
 		//
