@@ -95,35 +95,35 @@ function register_custom_post_type() {
 
 	$args = array(
     'labels'              => array(
-  		'name'                  => _x( 'Posts', '<CPT>-textdomain' ),
-  		'singular_name'         => _x( 'Post', '<CPT>-textdomain' ),
-      'add_new'               => __( 'Add New', '<CPT>-textdomain' ),
-      'add_new_item'          => __( 'Add New Post', '<CPT>-textdomain' ),
-      'edit_item'             => __( 'Edit Post', '<CPT>-textdomain' ),
-      'new_item'              => __( 'New Post', '<CPT>-textdomain' ),
-  		'view_item'             => __( 'View Post', '<CPT>-textdomain' ),
-      'search_items'          => __( 'Search Posts', '<CPT>-textdomain' ),
-  		'not_found'             => __( 'No posts found', '<CPT>-textdomain' ),
-  		'not_found_in_trash'    => __( 'No posts found in trash', '<CPT>-textdomain' ),
-      // Labels for hierarchical post types only.
-  		'parent_item'        => __( 'Parent Post', '<CPT>-textdomain' ),
-  		'parent_item_colon'  => __( 'Parent Post:', '<CPT>-textdomain' ),
-      'all_items'             => __( 'All Posts', '<CPT>-textdomain' ),
-      'archives'
-      'insert_into_item'      => __( 'Insert into post', '<CPT>-textdomain' ),
-      'uploaded_to_this_item' => __( 'Uploaded to this post', '<CPT>-textdomain' ),
-      'featured_image'        => __( 'Featured Image', '<CPT>-textdomain' ),
-      'set_featured_image'    => __( 'Set featured image', '<CPT>-textdomain' ),
-      'remove_featured_image' => __( 'Remove featured image', '<CPT>-textdomain' ),
-      'use_featured_image'    => __( 'Use as featred image', '<CPT>-textdomain' ),
-  		'menu_name'             => __( 'Posts', '<CPT>-textdomain' ),
-      'filter_items_list'
-      'item_list_navigation'
-      'items_list'
-  		'name_admin_bar'        => __( 'Posts', '<CPT>-textdomain' ),
-  		'views'                 => __( 'Filter posts list', '<CPT>-textdomain' ),
-  		'pagination'            => __( 'Posts list navigation', '<CPT>-textdomain' ),
-  		'list'                  => __( 'Posts list', '<CPT>-textdomain' ),
+    		'name'                  => _x( 'Posts', '<CPT>-textdomain' ),
+    		'singular_name'         => _x( 'Post', '<CPT>-textdomain' ),
+        'add_new'               => __( 'Add New', '<CPT>-textdomain' ),
+        'add_new_item'          => __( 'Add New Post', '<CPT>-textdomain' ),
+        'edit_item'             => __( 'Edit Post', '<CPT>-textdomain' ),
+        'new_item'              => __( 'New Post', '<CPT>-textdomain' ),
+    		'view_item'             => __( 'View Post', '<CPT>-textdomain' ),
+        'search_items'          => __( 'Search Posts', '<CPT>-textdomain' ),
+    		'not_found'             => __( 'No posts found', '<CPT>-textdomain' ),
+    		'not_found_in_trash'    => __( 'No posts found in trash', '<CPT>-textdomain' ),
+        // Labels for hierarchical post types only.
+    		'parent_item'        => __( 'Parent Post', '<CPT>-textdomain' ),
+    		'parent_item_colon'  => __( 'Parent Post:', '<CPT>-textdomain' ),
+        'all_items'             => __( 'All Posts', '<CPT>-textdomain' ),
+        'archives'
+        'insert_into_item'      => __( 'Insert into post', '<CPT>-textdomain' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this post', '<CPT>-textdomain' ),
+        'featured_image'        => __( 'Featured Image', '<CPT>-textdomain' ),
+        'set_featured_image'    => __( 'Set featured image', '<CPT>-textdomain' ),
+        'remove_featured_image' => __( 'Remove featured image', '<CPT>-textdomain' ),
+        'use_featured_image'    => __( 'Use as featred image', '<CPT>-textdomain' ),
+    		'menu_name'             => __( 'Posts', '<CPT>-textdomain' ),
+        'filter_items_list'
+        'item_list_navigation'
+        'items_list'
+    		'name_admin_bar'        => __( 'Posts', '<CPT>-textdomain' ),
+    		'views'                 => __( 'Filter posts list', '<CPT>-textdomain' ),
+    		'pagination'            => __( 'Posts list navigation', '<CPT>-textdomain' ),
+    		'list'                  => __( 'Posts list', '<CPT>-textdomain' ),
 		),
     'description'           => __( 'Description of my Custom Post Type', 'plugin-textdomain' ),
 		'public'                => true,
