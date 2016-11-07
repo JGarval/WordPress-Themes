@@ -1,1 +1,1 @@
-# WordPress-Themes
+# LMS WordPress Theme
