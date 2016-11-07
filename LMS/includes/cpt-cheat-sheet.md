@@ -1,4 +1,5 @@
 # CPT CHEAT SHEET
+* Credits to [@justinadlock](https://gist.github.com/justintadlock/6552000)
 
 | Name | Description | Value
 | --- | --- | ---
