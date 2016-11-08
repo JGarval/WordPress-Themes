@@ -60,7 +60,7 @@ function register_cpt_course() {
 		'menu_position'         => 3,
 		'menu_icon'             => 'dashicons-welcome-learn-more',
 		'capability_type'       => 'curso',
-		//'capabilities'          => array(
+		'capabilities'          => array(
   		'edit_post'              => 'edit_curso',
   		'read_post'              => 'read_curso',
   		'delete_post'            => 'delete_curso',
@@ -76,9 +76,9 @@ function register_cpt_course() {
   		'delete_others_posts'    => 'manage_cursos',
   		'edit_private_posts'     => 'edit_cursos',
   		'edit_published_posts'   => 'edit_cursos'
-		//),
+		),
  		'map_meta_cap'          => true,
-  	'hierarchical'          => false,
+  	'hierarchical'          => true,
   	'supports'              => array(
       'title',
       //'editor',
