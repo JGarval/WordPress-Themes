@@ -12,15 +12,15 @@
 */
 
 /********************
-  Including plugin files
+  Include plugins
 ********************/
 // LMS Theme Support
 include(get_stylesheet_directory().'/includes/lms-theme-support.php');
 // CPT Course
-include(get_stylesheet_directory().'/includes/cpt-course.php');
+include(get_stylesheet_directory().'/includes/courses/cpt-course.php');
 
 /********************
-  Remove default WordPress head
+  Remove default WordPress headers
 ********************/
 // Really Simple Discovery Link
 remove_action('wp_head', 'rsd_link');
@@ -48,7 +48,6 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 /********************
   Remove Menu Pages
 ********************/
-
 function lms_remove_menu_pages() {
   if (!current_user_can('administrator')) {
       remove_menu_page('index.php'); // Posts

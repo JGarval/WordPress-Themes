@@ -11,6 +11,8 @@
 * ==============================
 */
 
+include(get_stylesheet_directory().'/includes/courses/tax-course.php');
+
 # register_post_type should only be invoked through the 'init' action.
 # It will not work if called before 'init', and aspects of the newly created or modified post type will work incorrectly if called later
 add_action( 'init', 'register_cpt_course' );
