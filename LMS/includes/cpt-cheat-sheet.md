@@ -162,7 +162,7 @@ function register_custom_post_type() {
       // Labels for hierarchical post types only.
 			'parent_item'           => __( 'Parent Post', '{CPT}-textdomain' ),
 			'parent_item_colon'     => __( 'Parent Post:', '{CPT}-textdomain' ),
-		),
+    ),
 		'description'           => __( 'Description of my Custom Post Type', 'plugin-textdomain' ),
 		'public'                => true,
   	'exclude_from_search'   => false,
