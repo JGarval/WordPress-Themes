@@ -71,3 +71,4 @@ function remove_menu_pages() {
     'tools.php', // Tools
   }
 }
+add_action('admin_menu', 'remove_menu_pages');
