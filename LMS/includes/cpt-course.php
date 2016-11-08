@@ -15,7 +15,7 @@
 # It will not work if called before 'init', and aspects of the newly created or modified post type will work incorrectly if called later
 add_action( 'init', 'register_cpt_course' );
 
-function register_cpt_course) {
+function register_cpt_course() {
 
 	$args = array(
 		'labels'              => array(
