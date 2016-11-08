@@ -132,49 +132,49 @@ add_action( 'init', 'register_custom_post_type' );
 function register_custom_post_type() {
 
 	$args = array(
-    'labels'              => array(
-    		'name'                  => _x( 'Posts', '{CPT}-textdomain' ),
-    		'singular_name'         => _x( 'Post', '{CPT}-textdomain' ),
-        'add_new'               => __( 'Add New', '{CPT}-textdomain' ),
-        'add_new_item'          => __( 'Add New Post', '{CPT}-textdomain' ),
-        'edit_item'             => __( 'Edit Post', '{CPT}-textdomain' ),
-        'new_item'              => __( 'New Post', '{CPT}-textdomain' ),
-    		'view_item'             => __( 'View Post', '{CPT}-textdomain' ),
-        'search_items'          => __( 'Search Posts', '{CPT}-textdomain' ),
-    		'not_found'             => __( 'No posts found', '{CPT}-textdomain' ),
-    		'not_found_in_trash'    => __( 'No posts found in trash', '{CPT}-textdomain' ),
-        // Labels for hierarchical post types only.
-    		'parent_item'        => __( 'Parent Post', '{CPT}-textdomain' ),
-    		'parent_item_colon'  => __( 'Parent Post:', '{CPT}-textdomain' ),
-        'all_items'             => __( 'All Posts', '{CPT}-textdomain' ),
-        'archives'
-        'insert_into_item'      => __( 'Insert into post', '{CPT}-textdomain' ),
-        'uploaded_to_this_item' => __( 'Uploaded to this post', '{CPT}-textdomain' ),
-        'featured_image'        => __( 'Featured Image', '{CPT}-textdomain' ),
-        'set_featured_image'    => __( 'Set featured image', '{CPT}-textdomain' ),
-        'remove_featured_image' => __( 'Remove featured image', '{CPT}-textdomain' ),
-        'use_featured_image'    => __( 'Use as featred image', '{CPT}-textdomain' ),
-    		'menu_name'             => __( 'Posts', '{CPT}-textdomain' ),
-        'filter_items_list'
-        'item_list_navigation'
-        'items_list'
-    		'name_admin_bar'        => __( 'Posts', '{CPT}-textdomain' ),
-    		'views'                 => __( 'Filter posts list', '{CPT}-textdomain' ),
-    		'pagination'            => __( 'Posts list navigation', '{CPT}-textdomain' ),
-    		'list'                  => __( 'Posts list', '{CPT}-textdomain' ),
+		'labels'              => array(
+			'name'                  => _x( 'Posts', '{CPT}-textdomain' ),
+			'singular_name'         => _x( 'Post', '{CPT}-textdomain' ),
+			'add_new'               => __( 'Add New', '{CPT}-textdomain' ),
+			'add_new_item'          => __( 'Add New Post', '{CPT}-textdomain' ),
+			'edit_item'             => __( 'Edit Post', '{CPT}-textdomain' ),
+			'new_item'              => __( 'New Post', '{CPT}-textdomain' ),
+			'view_item'             => __( 'View Post', '{CPT}-textdomain' ),
+			'search_items'          => __( 'Search Posts', '{CPT}-textdomain' ),
+			'not_found'             => __( 'No posts found', '{CPT}-textdomain' ),
+			'not_found_in_trash'    => __( 'No posts found in trash', '{CPT}-textdomain' ),
+			// Labels for hierarchical post types only.
+			'parent_item'        => __( 'Parent Post', '{CPT}-textdomain' ),
+			'parent_item_colon'  => __( 'Parent Post:', '{CPT}-textdomain' ),
+			'all_items'             => __( 'All Posts', '{CPT}-textdomain' ),
+			'archives'
+			'insert_into_item'      => __( 'Insert into post', '{CPT}-textdomain' ),
+			'uploaded_to_this_item' => __( 'Uploaded to this post', '{CPT}-textdomain' ),
+			'featured_image'        => __( 'Featured Image', '{CPT}-textdomain' ),
+			'set_featured_image'    => __( 'Set featured image', '{CPT}-textdomain' ),
+			'remove_featured_image' => __( 'Remove featured image', '{CPT}-textdomain' ),
+			'use_featured_image'    => __( 'Use as featred image', '{CPT}-textdomain' ),
+			'menu_name'             => __( 'Posts', '{CPT}-textdomain' ),
+			'filter_items_list'
+			'item_list_navigation'
+			'items_list'
+			'name_admin_bar'        => __( 'Posts', '{CPT}-textdomain' ),
+			'views'                 => __( 'Filter posts list', '{CPT}-textdomain' ),
+			'pagination'            => __( 'Posts list navigation', '{CPT}-textdomain' ),
+			'list'                  => __( 'Posts list', '{CPT}-textdomain' ),
 		),
-    'description'           => __( 'Description of my Custom Post Type', 'plugin-textdomain' ),
+		'description'           => __( 'Description of my Custom Post Type', 'plugin-textdomain' ),
 		'public'                => true,
-    'exclude_from_search'   => false,
-    'publicly_queryable'    => true,
-    'show_ui'               => true,
-    'show_in_nav_menus'     => false,
+	    	'exclude_from_search'   => false,
+	    	'publicly_queryable'    => true,
+	    	'show_ui'               => true,
+	    	'show_in_nav_menus'     => false,
 		'show_in_menu'          => true,
 		'show_in_admin_bar'     => true,
 		'menu_position'         => null,
 		'menu_icon'             => null,
-    'capability_type'       => '{CPT}',
-    'capabilities'          => array(
+    		'capability_type'       => '{CPT}',
+    		'capabilities'          => array(
 			'edit_post'              => 'edit_{CPT}',
 			'read_post'              => 'read_{CPT}',
 			'delete_post'            => 'delete_{CPT}',
@@ -191,9 +191,9 @@ function register_custom_post_type() {
 			'edit_private_posts'     => 'edit_{CPT}s',
 			'edit_published_posts'   => 'edit_{CPT}s'
 		),
-    'map_meta_cap'          => true,
-    'hierarchical'          => false,
-    'supports'              => array(
+ 		'map_meta_cap'          => true,
+	    	'hierarchical'          => false,
+	    	'supports'              => array(
 			'title', // Post titles ($post->post_title).
 			'editor', // Post content ($post->post_content).
 			'excerpt', // Post excerpt ($post->post_excerpt).
@@ -206,10 +206,10 @@ function register_custom_post_type() {
 			'page-attributes', // Displays the Attributes meta box with a parent selector and menu_order input box.
 			'post-formats', // Displays the Format meta box and allows post formats to be used with the posts.
 		),
-    'register_meta_box_cb'  =>
-    'taxonomies'
-    'has_archive'           => '{CPT}',
-    'rewrite'               => array(
+    		'register_meta_box_cb'  =>
+    		'taxonomies'
+    		'has_archive'           => '{CPT}',
+    		'rewrite'               => array(
 			// The slug to use for individual posts of this type.
 			'slug'       => '{CPT}', // string (defaults to the post type name)
 			// Whether to show the $wp_rewrite->front slug in the permalink.
@@ -221,15 +221,15 @@ function register_custom_post_type() {
 			// Assign an endpoint mask to this permalink.
 			'ep_mask'    => EP_PERMALINK, // const (defaults to EP_PERMALINK)
 		),
-    'permalink_epmask'
-    'query_var'             => '{CPT}',
+    		'permalink_epmask'
+    		'query_var'             => '{CPT}',
 		'can_export'            => true,
 		'delete_with_user'      => false,
-    'show_in_rest'          => ,
-    'rest_base'             => ,
-    'rest_controller_class' => ,
-    '_builtin'              => ,
-    '_edit_link'            => ,
+    		'show_in_rest'          => ,
+    		'rest_base'             => ,
+    		'rest_controller_class' => ,
+    		'_builtin'              => ,
+    		'_edit_link'            => ,
 	);
 
 	// Register our Custom Post Type.
