@@ -165,46 +165,46 @@ function register_custom_post_type() {
 		),
 		'description'           => __( 'Description of my Custom Post Type', 'plugin-textdomain' ),
 		'public'                => true,
-	    	'exclude_from_search'   => false,
-	    	'publicly_queryable'    => true,
-	    	'show_ui'               => true,
-	    	'show_in_nav_menus'     => false,
+  	'exclude_from_search'   => false,
+  	'publicly_queryable'    => true,
+  	'show_ui'               => true,
+  	'show_in_nav_menus'     => false,
 		'show_in_menu'          => true,
 		'show_in_admin_bar'     => true,
 		'menu_position'         => null,
 		'menu_icon'             => null,
-    		'capability_type'       => '{CPT}',
-    		'capabilities'          => array(
-			'edit_post'              => 'edit_{CPT}',
-			'read_post'              => 'read_{CPT}',
-			'delete_post'            => 'delete_{CPT}',
-			'create_posts'           => 'create_{CPT}s',
-			'edit_posts'             => 'edit_{CPT}s',
-			'edit_others_posts'      => 'manage_{CPT}s',
-			'publish_posts'          => 'manage_{CPT}s',
-			'read_private_posts'     => 'read',
-			'read'                   => 'read',
-			'delete_posts'           => 'manage_{CPT}s',
-			'delete_private_posts'   => 'manage_{CPT}s',
-			'delete_published_posts' => 'manage_{CPT}s',
-			'delete_others_posts'    => 'manage_{CPT}s',
-			'edit_private_posts'     => 'edit_{CPT}s',
-			'edit_published_posts'   => 'edit_{CPT}s'
+		'capability_type'       => '{CPT}',
+		'capabilities'          => array(
+  		'edit_post'              => 'edit_{CPT}',
+  		'read_post'              => 'read_{CPT}',
+  		'delete_post'            => 'delete_{CPT}',
+  		'create_posts'           => 'create_{CPT}s',
+  		'edit_posts'             => 'edit_{CPT}s',
+  		'edit_others_posts'      => 'manage_{CPT}s',
+  		'publish_posts'          => 'manage_{CPT}s',
+  		'read_private_posts'     => 'read',
+  		'read'                   => 'read',
+  		'delete_posts'           => 'manage_{CPT}s',
+  		'delete_private_posts'   => 'manage_{CPT}s',
+  		'delete_published_posts' => 'manage_{CPT}s',
+  		'delete_others_posts'    => 'manage_{CPT}s',
+  		'edit_private_posts'     => 'edit_{CPT}s',
+  		'edit_published_posts'   => 'edit_{CPT}s'
 		),
  		'map_meta_cap'          => true,
-	    	'hierarchical'          => false,
-	    	'supports'              => array(
-			'title', // Post titles ($post->post_title).
-			'editor', // Post content ($post->post_content).
-			'excerpt', // Post excerpt ($post->post_excerpt).
-			'author', // Post author ($post->post_author).
-			'thumbnail', // Featured images (the user's theme must support 'post-thumbnails').
-			'comments', // Displays comments meta box.  If set, comments (any type) are allowed for the post.
-			'trackbacks', // Displays meta box to send trackbacks from the edit post screen.
-			'custom-fields', // Displays the Custom Fields meta box. Post meta is supported regardless.
-			'revisions', // Displays the Revisions meta box. If set, stores post revisions in the database.
-			'page-attributes', // Displays the Attributes meta box with a parent selector and menu_order input box.
-			'post-formats', // Displays the Format meta box and allows post formats to be used with the posts.
+  	'hierarchical'          => false,
+  	'supports'              => array(
+		'title', // Post titles ($post->post_title).
+		'editor', // Post content ($post->post_content).
+		'excerpt', // Post excerpt ($post->post_excerpt).
+		'author', // Post author ($post->post_author).
+		'thumbnail', // Featured images (the user's theme must support 'post-thumbnails').
+		'comments', // Displays comments meta box.  If set, comments (any type) are allowed for the post.
+		'trackbacks', // Displays meta box to send trackbacks from the edit post screen.
+		'custom-fields', // Displays the Custom Fields meta box. Post meta is supported regardless.
+		'revisions', // Displays the Revisions meta box. If set, stores post revisions in the database.
+		'page-attributes', // Displays the Attributes meta box with a parent selector and menu_order input box.
+		'post-formats', // Displays the Format meta box and allows post formats to be used with the posts.
 		),
     		'register_meta_box_cb'  =>
     		'taxonomies'
