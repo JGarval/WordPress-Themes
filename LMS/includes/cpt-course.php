@@ -30,7 +30,7 @@ function register_cpt_course() {
 			'not_found'             => __( 'No se ha encontrado ningún curso', 'lms-theme' ),
 			'not_found_in_trash'    => __( 'No se ha encontrado ningún curso en la papelera', 'lms-theme' ),
 			'all_items'             => __( 'Todos los cursos', 'lms-theme' ),
-			'archives'              => true,
+			'archives'              => false,
 			'insert_into_item'      => __( 'Insertar en cursos', 'lms-theme' ),
 			'uploaded_to_this_item' => __( 'Actualizar a este curso', 'lms-theme' ),
 			'featured_image'        => __( 'Imagen destacada', 'lms-theme' ),
@@ -60,7 +60,7 @@ function register_cpt_course() {
 		'menu_position'         => 3,
 		'menu_icon'             => 'dashicons-welcome-learn-more',
 		'capability_type'       => 'curso',
-		'capabilities'          => array(
+		/*'capabilities'          => array(
   		'edit_post'              => 'edit_curso',
   		'read_post'              => 'read_curso',
   		'delete_post'            => 'delete_curso',
@@ -76,9 +76,9 @@ function register_cpt_course() {
   		'delete_others_posts'    => 'manage_cursos',
   		'edit_private_posts'     => 'edit_cursos',
   		'edit_published_posts'   => 'edit_cursos'
-		),
- 		'map_meta_cap'          => true,
-  	'hierarchical'          => true,
+		),*/
+ 		//'map_meta_cap'          => false,
+  	//'hierarchical'          => false,
   	'supports'              => array(
       'title',
       //'editor',
@@ -97,10 +97,10 @@ function register_cpt_course() {
 		'has_archive'           => true,
 		'rewrite'               => array(
       'slug'       => 'curso',
-      'with_front' => false,
-      'pages'      => true,
-      'feeds'      => true,
-      'ep_mask'    => EP_PERMALINK,
+      //'with_front' => false,
+      //'pages'      => true,
+      //'feeds'      => true,
+      //'ep_mask'    => EP_PERMALINK,
 		),
 		//'permalink_epmask'      => EP_PERMALINK, // Replaced 3.4
 		'query_var'             => true,
