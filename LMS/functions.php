@@ -51,6 +51,7 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 
 function lms_remove_menu_pages() {
   if (!current_user_can('administrator')) {
+      remove_menu_page('index.php'); // Posts
       remove_menu_page('edit.php'); // Posts
       remove_menu_page('upload.php'); // Media
       remove_menu_page('link-manager.php'); // Links
@@ -62,6 +63,7 @@ function lms_remove_menu_pages() {
       remove_menu_page('tools.php'); // Tools
       remove_menu_page('options-general.php'); // Settings
   } else {
+    remove_menu_page('index.php'); // Posts
     remove_menu_page('edit.php'); // Posts
     remove_menu_page('upload.php'); // Media
     remove_menu_page('link-manager.php'); // Links
