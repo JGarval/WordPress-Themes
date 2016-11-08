@@ -101,7 +101,7 @@ function register_cpt_course() {
       //'pages'      => true,
       //'feeds'      => true,
       //'ep_mask'    => EP_PERMALINK,
-		),
+		//),
 		//'permalink_epmask'      => EP_PERMALINK, // Replaced 3.4
 		//'query_var'             => true,
 		//'can_export'            => true,
