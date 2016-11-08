@@ -76,7 +76,7 @@ function register_cpt_course() {
   		'delete_others_posts'    => 'manage_cursos',
   		'edit_private_posts'     => 'edit_cursos',
   		'edit_published_posts'   => 'edit_cursos'
-		),
+		//),
  		'map_meta_cap'          => true,
   	'hierarchical'          => false,
   	'supports'              => array(
