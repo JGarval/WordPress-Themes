@@ -49,7 +49,7 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
   Remove Menu Pages
 ********************/
 
-function remove_menu_pages() {
+function lms_remove_menu_pages() {
   if (!current_user_can('administrator')) {
     remove_menu_pages(array(
       'edit.php', // Posts
@@ -64,11 +64,13 @@ function remove_menu_pages() {
       'options-general.php', // Settings
     ));
   } else {
-    'edit.php', // Posts
-    'link-manager.php', // Links
-    'edit-comments.php', // Comments
-    'plugins.php', // Plugins
-    'tools.php', // Tools
+    remove_menu_pages(array(
+      'edit.php', // Posts
+      'link-manager.php', // Links
+      'edit-comments.php', // Comments
+      'plugins.php', // Plugins
+      'tools.php', // Tools
+    ));
   }
 }
-add_action('admin_menu', 'remove_menu_pages');
+add_action('admin_menu', 'lms_remove_menu_pages');
