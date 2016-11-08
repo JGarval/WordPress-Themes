@@ -206,30 +206,30 @@ function register_custom_post_type() {
 		'page-attributes', // Displays the Attributes meta box with a parent selector and menu_order input box.
 		'post-formats', // Displays the Format meta box and allows post formats to be used with the posts.
 		),
-    		'register_meta_box_cb'  =>
-    		'taxonomies'
-    		'has_archive'           => '{CPT}',
-    		'rewrite'               => array(
-			// The slug to use for individual posts of this type.
-			'slug'       => '{CPT}', // string (defaults to the post type name)
-			// Whether to show the $wp_rewrite->front slug in the permalink.
-			'with_front' => false, // bool (defaults to TRUE)
-			// Whether to allow single post pagination via the <!--nextpage--> quicktag.
-			'pages'      => true, // bool (defaults to TRUE)
-			// Whether to create pretty permalinks for feeds.
-			'feeds'      => true, // bool (defaults to the 'has_archive' argument)
-			// Assign an endpoint mask to this permalink.
-			'ep_mask'    => EP_PERMALINK, // const (defaults to EP_PERMALINK)
+		'register_meta_box_cb'  =>
+		'taxonomies'
+		'has_archive'           => '{CPT}',
+		'rewrite'               => array(
+      // The slug to use for individual posts of this type.
+      'slug'       => '{CPT}', // string (defaults to the post type name)
+      // Whether to show the $wp_rewrite->front slug in the permalink.
+      'with_front' => false, // bool (defaults to TRUE)
+      // Whether to allow single post pagination via the <!--nextpage--> quicktag.
+      'pages'      => true, // bool (defaults to TRUE)
+      // Whether to create pretty permalinks for feeds.
+      'feeds'      => true, // bool (defaults to the 'has_archive' argument)
+      // Assign an endpoint mask to this permalink.
+      'ep_mask'    => EP_PERMALINK, // const (defaults to EP_PERMALINK)
 		),
-    		'permalink_epmask'
-    		'query_var'             => '{CPT}',
+		'permalink_epmask'
+		'query_var'             => '{CPT}',
 		'can_export'            => true,
 		'delete_with_user'      => false,
-    		'show_in_rest'          => ,
-    		'rest_base'             => ,
-    		'rest_controller_class' => ,
-    		'_builtin'              => ,
-    		'_edit_link'            => ,
+		'show_in_rest'          => ,
+		'rest_base'             => ,
+		'rest_controller_class' => ,
+		'_builtin'              => ,
+		'_edit_link'            => ,
 	);
 
 	// Register our Custom Post Type.
