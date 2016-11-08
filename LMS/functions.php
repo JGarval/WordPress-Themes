@@ -61,7 +61,7 @@ function remove_menu_pages() {
       'themes.php', // Appearance
       'users.php', // Users
       'tools.php', // Tools
-      'options-general.php'); // Settings
+      'options-general.php'), // Settings
     ));
   } else {
     'edit.php', // Posts
