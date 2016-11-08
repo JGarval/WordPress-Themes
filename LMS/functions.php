@@ -51,26 +51,24 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 
 function lms_remove_menu_pages() {
   if (!current_user_can('administrator')) {
-    remove_menu_pages(array(
-      'edit.php', // Posts
-      'upload.php', // Media
-      'link-manager.php', // Links
-      'edit-comments.php', // Comments
-      'edit.php?post_type=page', // Pages
-      'plugins.php', // Plugins
-      'themes.php', // Appearance
-      'users.php', // Users
-      'tools.php', // Tools
-      'options-general.php', // Settings
-    ));
+      remove_menu_page('edit.php'); // Posts
+      remove_menu_page('upload.php'); // Media
+      remove_menu_page('link-manager.php'); // Links
+      remove_menu_page('edit-comments.php'); // Comments
+      remove_menu_page('edit.php?post_type=page'); // Pages
+      remove_menu_page('plugins.php'); // Plugins
+      remove_menu_page('themes.php'); // Appearance
+      remove_menu_page('users.php'); // Users
+      remove_menu_page('tools.php'); // Tools
+      remove_menu_page('options-general.php'); // Settings
   } else {
-    remove_menu_pages(array(
-      'edit.php', // Posts
-      'link-manager.php', // Links
-      'edit-comments.php', // Comments
-      'plugins.php', // Plugins
-      'tools.php', // Tools
-    ));
+    remove_menu_page('edit.php'); // Posts
+    remove_menu_page('upload.php'); // Media
+    remove_menu_page('link-manager.php'); // Links
+    remove_menu_page('edit-comments.php'); // Comments
+    remove_menu_page('plugins.php'); // Plugins
+    remove_menu_page('themes.php'); // Appearance
+    remove_menu_page('tools.php'); // Tools
   }
 }
 add_action('admin_menu', 'lms_remove_menu_pages');
