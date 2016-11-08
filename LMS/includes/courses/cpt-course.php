@@ -32,7 +32,7 @@ function register_cpt_course() {
 			'not_found'             => __( 'No se ha encontrado ningún curso', 'lms-theme' ),
 			'not_found_in_trash'    => __( 'No se ha encontrado ningún curso en la papelera', 'lms-theme' ),
 			'all_items'             => __( 'Todos los cursos', 'lms-theme' ),
-			'archives'              => false,
+			'archives'              => true,
 			'insert_into_item'      => __( 'Insertar en cursos', 'lms-theme' ),
 			'uploaded_to_this_item' => __( 'Actualizar a este curso', 'lms-theme' ),
 			'featured_image'        => __( 'Imagen destacada', 'lms-theme' ),
