@@ -44,3 +44,30 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 //
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
+
+/********************
+  Remove Menu Pages
+********************/
+
+function remove_menu_pages() {
+  if (!current_user_can('administrator')) {
+    remove_menu_pages(array(
+      'edit.php', // Posts
+      'upload.php', // Media
+      'link-manager.php', // Links
+      'edit-comments.php', // Comments
+      'edit.php?post_type=page', // Pages
+      'plugins.php', // Plugins
+      'themes.php', // Appearance
+      'users.php', // Users
+      'tools.php', // Tools
+      'options-general.php'); // Settings
+    ));
+  } else {
+    'edit.php', // Posts
+    'link-manager.php', // Links
+    'edit-comments.php', // Comments
+    'plugins.php', // Plugins
+    'tools.php', // Tools
+  }
+}
