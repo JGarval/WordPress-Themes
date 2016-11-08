@@ -108,7 +108,7 @@ function register_cpt_course() {
 		'delete_with_user'      => false,
 		'show_in_rest'          => true,
 		'rest_base'             => true,
-		'rest_controller_class' => WP_REST_Posts_Controller,
+		//'rest_controller_class' => '',
 		'_builtin'              => false, // Not for general use
 		'_edit_link'            => false, // Not for general use
 	);
