@@ -60,7 +60,7 @@ function register_cpt_course() {
 		'menu_position'         => 3,
 		'menu_icon'             => 'dashicons-welcome-learn-more',
 		'capability_type'       => 'curso',
-		'capabilities'          => array(
+		//'capabilities'          => array(
   		'edit_post'              => 'edit_curso',
   		'read_post'              => 'read_curso',
   		'delete_post'            => 'delete_curso',
