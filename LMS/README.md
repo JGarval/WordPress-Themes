@@ -2,6 +2,7 @@
 WordPress Theme Development from scratch.
 
 In this project, we are going to learn:
+
 1. How to build our functions.php correctly.
 2. How to create a Custom Post Type (CPT).
 3. How to add Custom Taxonomies to our CPT.
