@@ -59,7 +59,7 @@ function register_cpt_course() {
 		'show_in_admin_bar'     => true,
 		'menu_position'         => 3,
 		'menu_icon'             => 'dashicons-welcome-learn-more',
-		'capability_type'       => 'curso',
+		//'capability_type'       => 'curso',
 		/*'capabilities'          => array(
   		'edit_post'              => 'edit_curso',
   		'read_post'              => 'read_curso',
@@ -94,23 +94,23 @@ function register_cpt_course() {
 		),
 		//'register_meta_box_cb'  =>
 		//'taxonomies'            =>
-		'has_archive'           => true,
-		'rewrite'               => array(
-      'slug'       => 'curso',
+		'has_archive'           => false,
+		//'rewrite'               => array(
+      //'slug'       => 'curso',
       //'with_front' => false,
       //'pages'      => true,
       //'feeds'      => true,
       //'ep_mask'    => EP_PERMALINK,
 		),
 		//'permalink_epmask'      => EP_PERMALINK, // Replaced 3.4
-		'query_var'             => true,
-		'can_export'            => true,
-		'delete_with_user'      => false,
-		'show_in_rest'          => true,
-		'rest_base'             => true,
+		//'query_var'             => true,
+		//'can_export'            => true,
+		//'delete_with_user'      => false,
+		//'show_in_rest'          => true,
+		//'rest_base'             => true,
 		//'rest_controller_class' => '',
-		'_builtin'              => false, // Not for general use
-		'_edit_link'            => false, // Not for general use
+		//'_builtin'              => false, // Not for general use
+		//'_edit_link'            => false, // Not for general use
 	);
 
 	// Register our Custom Post Type.
